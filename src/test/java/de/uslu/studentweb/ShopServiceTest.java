@@ -7,7 +7,7 @@ import java.util.HashMap;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ShopServiceTest {
-
+/*
     @Test
     void ShouldAddOneProduct() {
 
@@ -50,5 +50,7 @@ class ShopServiceTest {
         assertEquals(3, shopService.listProducts().size());
 
     }
+
+ */
 
 }

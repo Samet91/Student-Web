@@ -1,14 +1,19 @@
 package de.uslu.studentweb;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.Collection;
 import java.util.HashMap;
-
+@Repository
 public class ProductRepo {
 
-    private HashMap<String, Product> products;
+    private HashMap<String, Product> products = new HashMap<>();
 
-    public ProductRepo(HashMap<String, Product> products) {
-       this.products = products;
+    public ProductRepo() {
+       var product1 = new Product("Sam", "1");
+       var product2 = new Product("Max", "2");
+       products.put(product1.getId(), product1);
+       products.put(product2.getId(), product2);
     }
 
     public Collection<Product> list(){

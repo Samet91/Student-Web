@@ -5,9 +5,17 @@ import java.util.HashMap;
 public class Order {
 
     private String id;
-    private final HashMap<String, Product> products;
+    private HashMap<String, Product> products;
 
-    public Order(HashMap<String, Product> products) {
+
+    public Order() {
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setProducts(HashMap<String, Product> products) {
         this.products = products;
     }
 
