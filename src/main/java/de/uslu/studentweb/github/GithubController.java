@@ -14,7 +14,7 @@ public class GithubController {
     @GetMapping("/{githubUser}")
     public String[] getRepositoryNames(@PathVariable String githubUser) {
 
-        String url = "https://api.github.com/users/ + githubUser + /repos";
+        String url = "https://api.github.com/users/" + githubUser + "/repos";
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<Repository[]> response = restTemplate.getForEntity(url, Repository[].class);
         Repository[] repositories = response.getBody();
