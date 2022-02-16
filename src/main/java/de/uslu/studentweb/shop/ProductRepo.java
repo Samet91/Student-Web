@@ -10,10 +10,6 @@ public class ProductRepo {
     private HashMap<String, Product> products = new HashMap<>();
 
     public ProductRepo() {
-       var product1 = new Product("Sam", "1");
-       var product2 = new Product("Max", "2");
-       products.put(product1.getId(), product1);
-       products.put(product2.getId(), product2);
     }
 
     public Collection<Product> list(){
