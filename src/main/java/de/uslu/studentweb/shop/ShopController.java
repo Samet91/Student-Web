@@ -1,4 +1,4 @@
-package de.uslu.studentweb;
+package de.uslu.studentweb.shop;
 
 
 import org.springframework.web.bind.annotation.*;
