@@ -23,10 +23,10 @@ public class GithubController {
     public String[] getRepositoryNames(@PathVariable String githubUser) {
         Repository[] repositories = githubService.getRepositories(githubUser);
 
-        String[] repoName = Arrays.stream(repositories)
+        String[] repoNames = Arrays.stream(repositories)
                 .map(Repository::getName)
                 .toArray(String[]::new);
 
-         return repoName;
+         return repoNames;
     }
 }
